@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #495464;
+}
+
+.color-mainbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+
+}
+
+.color-mainbox h1 {
+    color: #E8E8E8;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.color-mainbox p {
+    color: #E8E8E8;
+    text-align: center;
+}
+
+
+
+.form {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.form input {
+    height: 8rem;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #858585;
+}
+
+.icon {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.github{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    margin: 1rem;
+    transition: all 1s ease;
+    cursor: pointer;
+} 
+.github i{
+    color: #000;
+} 
+
+.github:hover{
+    background-color: #000;
+}
+
+.github:hover i{
+    color: #e8e8e8;
+}
+.icon i {
+    font-size: 2.5rem;
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .color-mainbox {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .color-mainbox {
+        width: 80%;
+    }
+
+    .form input {
+        text-align: left;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 45%;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .color-mainbox {
+        width: 90%;
+    }
+    .github{
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .color-mainbox h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 40%;
+    }
+
+
+
+}
